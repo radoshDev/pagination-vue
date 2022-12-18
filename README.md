@@ -12,7 +12,7 @@ This project was developing with Vue 3 and TypeScript in [Vite](https://vitejs.d
    - then `yarn preview` to start viewing application on localhost;
    - open [http://localhost:4173/](http://localhost:4173/)
 ### Site:
-   - pagination-vue
+   - [https://users-viewer.vercel.app/](https://users-viewer.vercel.app/)
 
 ## How it works
 
