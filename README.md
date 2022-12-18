@@ -1,18 +1,27 @@
-# Vue 3 + TypeScript + Vite
+# Pagination Test Task
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Tools
+This project was developing with Vue 3 and TypeScript in [Vite](https://vitejs.dev/). Also used [Quasar](https://quasar.dev) as a UI library. Vuex was used to manage the state.
 
-## Recommended IDE Setup
+## How to run
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Localy:
+   - clone this github repository;
+   - at the project folder run `yarn` to install dependencies ([how to install yarn](https://yarnpkg.com/getting-started/install));
+   - run `yarn build` to build the project;
+   - then `yarn preview` to start viewing application on localhost;
+   - open [http://localhost:4173/](http://localhost:4173/)
+### Site:
+   - [https://users-viewer.vercel.app/](https://users-viewer.vercel.app/)
 
-## Type Support For `.vue` Imports in TS
+## How it works
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+This is a one-page-application that displays, sorts, and filters a list of users in the form of a table. 
+### Pagination
+At the bottom of the table there is pagination for more convenient use. 
+### Sorting
+To sort the data, just click on the table header of the column to be sorted.
+### Filtering
+There is also a convenient search for a user by name, you just need to start entering characters and you will be able to see the result.
+### Removing users
+Select the rows you want to remove by clicking on the checkbox and then click the "Remove" button in the table header.
